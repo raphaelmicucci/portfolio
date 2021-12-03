@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/b914a3bcac.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Raphael Micucci</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./coding.png" alt="Coding icon">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/raphaelmicucci">github</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/raphaelmicucci/">linkedin</a></li>
+            <li><a target="_blank" href="mailto:raphaelmicucci@gmail.com">e-mail</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Raphael Micucci</h1>
+                <h5>&lt&lt Full Stack Developer &gt&gt</Full></h5>
+            </div>
+            
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-chevron-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Illo exercitationem accusantium, ratione alias officia 
+                    perspiciatis vero natus illum ut rem praesentium deserunt 
+                    soluta ipsam, cumque quibusdam? Autem ut aut laborum ipsa 
+                    aliquam asperiores, officia perferendis dolorum quasi numquam nobis. 
+                    Consectetur numquam quaerat distinctio, praesentium voluptatum culpa 
+                    molestias sapiente ipsa quisquam.
+                </p>
+            </div>
+
+            <div class="form">
+                <input type="email" placeholder="Digite seu e-mail aqui">
+                <button>enviar</button>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('activate');
+        }
+    </script>
+
+</body>
+</html>
